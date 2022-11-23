@@ -9,7 +9,7 @@ public class OldMain extends PApplet {
     }
 
     PImage[] gen1;
-    int size = 100;
+   final int size = 100;
 
     @Override
     public void settings() {

@@ -1,26 +1,25 @@
 package Molekühl_Fabric.Generators;
 
 import Molekühl_Fabric.Atoms.WaterMolecule;
-import Molekühl_Fabric.Generator;
 
-public class WaterGenerator extends Generator {
-
-    public WaterGenerator(int distance) {
+public class WaterGenerator extends multipleAtomGenerator {
+    OxygenGenerator oxygenGenerator;
+    HydrogenGenerator hydrogenGenerator;
+    public WaterGenerator(int distance,OxygenGenerator oxygenGenerator,HydrogenGenerator hydrogenGenerator) {
         super(distance);
+        this.oxygenGenerator = oxygenGenerator;
+        this.hydrogenGenerator = hydrogenGenerator;
     }
 
     @Override
     protected WaterMolecule generateMolecule() {
+        hydrogenGenerator.getMolecule();
+        oxygenGenerator.getMolecule();
+        oxygenGenerator.getMolecule();
         return new WaterMolecule();
+
     }
 
-    public void setRechargeDuration(){
-        try {
-            Thread.sleep(rechargeDuration);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
 
 }

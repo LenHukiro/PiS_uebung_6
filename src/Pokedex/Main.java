@@ -7,7 +7,7 @@ public class Main extends PApplet {
     public static void main(String[] args) {
         PApplet.main(Main.class);
     }
-    int size = 100;
+    final int size = 100;
 
     @Override
     public void settings() {
@@ -37,8 +37,8 @@ public class Main extends PApplet {
     public void draw() {
         background(255);
         for(int i=0; i<PokeThread.gen1.length; i++) {
-            int xPos = (int)(i % 15) * size;
-            int yPos = (int)(i / 15) * size;
+            int xPos = (i % 15) * size;
+            int yPos = (i / 15) * size;
             if(PokeThread.gen1[i] == null){
                 textSize(12);
                 fill(color(0, 0, 0));

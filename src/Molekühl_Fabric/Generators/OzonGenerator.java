@@ -1,20 +1,24 @@
 package Molekühl_Fabric.Generators;
 
 import Molekühl_Fabric.Atoms.OzonMolecule;
-import Molekühl_Fabric.Generator;
 
-public class OzonGenerator extends Generator {
+public class OzonGenerator extends multipleAtomGenerator {
 
-    public OzonGenerator(int distance) {
+OxygenGenerator oxygenGenerator;
+    public OzonGenerator(int distance,OxygenGenerator oxygenGenerator) {
         super(distance);
+        this.oxygenGenerator = oxygenGenerator;
     }
 
     @Override
     protected OzonMolecule generateMolecule() {
-        return new OzonMolecule();
+            oxygenGenerator.getMolecule();
+            oxygenGenerator.getMolecule();
+            oxygenGenerator.getMolecule();
+            return new OzonMolecule();
     }
 
-    public void setRechargeDuration(){
+    public void setRechargeDuration() {
         try {
             Thread.sleep(rechargeDuration);
         } catch (InterruptedException e) {

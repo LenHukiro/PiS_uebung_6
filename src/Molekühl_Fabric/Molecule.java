@@ -13,7 +13,9 @@ public abstract class Molecule implements IAtom {
         return 0;
     }
 
-    public abstract String getStringSymbol();
-
     protected abstract void setAtoms();
+
+    public boolean isEmpty(){
+        return atoms[0] == null;
+    }
 }

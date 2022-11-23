@@ -3,7 +3,7 @@ package Pokedex;
 import processing.core.PImage;
 
 public class PokeThread extends Thread {
-    static PImage[] gen1 = new PImage[151];
+    static final PImage[] gen1 = new PImage[151];
     static int counter = 0;
     int start, end;
 

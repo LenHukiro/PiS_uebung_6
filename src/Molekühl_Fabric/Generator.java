@@ -3,12 +3,16 @@ package Molekühl_Fabric;
 import java.util.concurrent.Semaphore;
 
 public abstract class Generator extends Thread  {
-    protected int rechargeDuration;
+    protected final int rechargeDuration;
 
     protected Semaphore molecules = new Semaphore(0);
 
     public Generator(int rechargeDuration){
         this.rechargeDuration = rechargeDuration;
+    }
+
+    @Override
+    public void run() {
         while(true){
             setRechargeDuration();
             generate();
@@ -16,7 +20,10 @@ public abstract class Generator extends Thread  {
     }
 
     protected void generate() {
-        molecules = new Semaphore(molecules.availablePermits()+1);
+        molecules.release();
+    }
+    public int getMoleculeCount(){
+        return molecules.availablePermits();
     }
 
     public IAtom getMolecule(){
@@ -35,7 +42,7 @@ public abstract class Generator extends Thread  {
 
     protected void setRechargeDuration() {
         try {
-            Thread.sleep(0,rechargeDuration);
+            Thread.sleep(1000,rechargeDuration);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
