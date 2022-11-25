@@ -19,9 +19,10 @@ public class PokeThread extends Thread {
             for (int i = start; i < end; i++) {
                 String p = String.format("https://assets.pokemon.com/assets/cms2/img/pokedex/full/%03d.png", i + 1);
                 gen1[i] = Main.loadPokeImage(p);
-                //System.out.println("Loaded: " + i);
             }
         }
     }
+
+
 
 }

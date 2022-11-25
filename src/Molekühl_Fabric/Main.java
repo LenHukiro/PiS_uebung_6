@@ -40,9 +40,9 @@ boolean init;
     public void draw() {
         fill(255);
         ArrayList<IAtom> atoms = new ArrayList<>();
-        for (int i = 0;i<generators.length;i++) {
-            for (int j = 0; j < generators[i].getMoleculeCount(); j++) {
-                atoms.add(generators[i].getMolecule());
+        for (Generator generator : generators) {
+            for (int j = 0; j < generator.getMoleculeCount(); j++) {
+                atoms.add(generator.getMolecule());
             }
         }
         Random r = new Random();

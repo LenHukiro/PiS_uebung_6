@@ -2,7 +2,7 @@ package Molekühl_Fabric.Generators;
 
 import Molekühl_Fabric.Atoms.WaterMolecule;
 
-public class WaterGenerator extends multipleAtomGenerator {
+public class WaterGenerator extends MultipleAtomGenerator {
     OxygenGenerator oxygenGenerator;
     HydrogenGenerator hydrogenGenerator;
     public WaterGenerator(int distance,OxygenGenerator oxygenGenerator,HydrogenGenerator hydrogenGenerator) {

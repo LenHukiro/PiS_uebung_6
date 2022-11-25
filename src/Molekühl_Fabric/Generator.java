@@ -4,7 +4,6 @@ import java.util.concurrent.Semaphore;
 
 public abstract class Generator extends Thread  {
     protected final int rechargeDuration;
-
     protected Semaphore molecules = new Semaphore(0);
 
     public Generator(int rechargeDuration){

@@ -14,8 +14,4 @@ public abstract class Molecule implements IAtom {
     }
 
     protected abstract void setAtoms();
-
-    public boolean isEmpty(){
-        return atoms[0] == null;
-    }
 }

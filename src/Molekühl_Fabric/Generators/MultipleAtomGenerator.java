@@ -4,10 +4,10 @@ import Molekühl_Fabric.Generator;
 import Molekühl_Fabric.IAtom;
 
 
-public abstract class multipleAtomGenerator  extends Generator {
+public abstract class MultipleAtomGenerator extends Generator {
     private IAtom[] atoms;
 
-    public multipleAtomGenerator(int distance) {
+    public MultipleAtomGenerator(int distance) {
         super(distance);
     }
 

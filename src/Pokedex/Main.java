@@ -43,7 +43,6 @@ public class Main extends PApplet {
                 textSize(12);
                 fill(color(0, 0, 0));
                 text("Loading", xPos+(float)size/2, yPos+(float)size/2);
-                //image(loadImage("loading.png"), xPos, yPos, size, size);
             }else
                 image(PokeThread.gen1[i], xPos, yPos, size, size);
         }

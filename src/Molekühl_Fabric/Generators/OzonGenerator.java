@@ -2,7 +2,7 @@ package Molekühl_Fabric.Generators;
 
 import Molekühl_Fabric.Atoms.OzonMolecule;
 
-public class OzonGenerator extends multipleAtomGenerator {
+public class OzonGenerator extends MultipleAtomGenerator {
 
 OxygenGenerator oxygenGenerator;
     public OzonGenerator(int distance,OxygenGenerator oxygenGenerator) {
