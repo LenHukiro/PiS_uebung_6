@@ -1,7 +1,7 @@
-package Molekühl_Fabric.Generators;
+package Molecule_Fabric.Generators;
 
-import Molekühl_Fabric.Atoms.OxygenAtom;
-import Molekühl_Fabric.Generator;
+import Molecule_Fabric.Atoms.OxygenAtom;
+import Molecule_Fabric.Generator;
 
 public class OxygenGenerator extends Generator {
     public OxygenGenerator(int rechargeDuration) {

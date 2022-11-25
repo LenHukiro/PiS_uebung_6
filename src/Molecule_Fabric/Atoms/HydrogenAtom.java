@@ -1,6 +1,6 @@
-package Molekühl_Fabric.Atoms;
+package Molecule_Fabric.Atoms;
 
-import Molekühl_Fabric.IAtom;
+import Molecule_Fabric.IAtom;
 
 public class HydrogenAtom implements IAtom {
     @Override

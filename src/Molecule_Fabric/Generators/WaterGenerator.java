@@ -1,6 +1,6 @@
-package Molekühl_Fabric.Generators;
+package Molecule_Fabric.Generators;
 
-import Molekühl_Fabric.Atoms.WaterMolecule;
+import Molecule_Fabric.Atoms.WaterMolecule;
 
 public class WaterGenerator extends MultipleAtomGenerator {
     OxygenGenerator oxygenGenerator;

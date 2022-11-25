@@ -1,9 +1,9 @@
-package Molekühl_Fabric;
+package Molecule_Fabric;
 
-import Molekühl_Fabric.Generators.HydrogenGenerator;
-import Molekühl_Fabric.Generators.OxygenGenerator;
-import Molekühl_Fabric.Generators.OzonGenerator;
-import Molekühl_Fabric.Generators.WaterGenerator;
+import Molecule_Fabric.Generators.HydrogenGenerator;
+import Molecule_Fabric.Generators.OxygenGenerator;
+import Molecule_Fabric.Generators.OzonGenerator;
+import Molecule_Fabric.Generators.WaterGenerator;
 import processing.core.PApplet;
 
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ public class Main extends PApplet {
     final int height = 800,width = 1600;
     final Generator[] generators = new Generator[4];
     public static void main(String[] args) {
-        PApplet.main(Molekühl_Fabric.Main.class);
+        PApplet.main(Molecule_Fabric.Main.class);
     }
 
     @Override

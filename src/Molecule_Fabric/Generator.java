@@ -1,4 +1,4 @@
-package Molekühl_Fabric;
+package Molecule_Fabric;
 
 import java.util.concurrent.Semaphore;
 

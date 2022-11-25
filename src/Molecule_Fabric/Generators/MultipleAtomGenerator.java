@@ -1,7 +1,7 @@
-package Molekühl_Fabric.Generators;
+package Molecule_Fabric.Generators;
 
-import Molekühl_Fabric.Generator;
-import Molekühl_Fabric.IAtom;
+import Molecule_Fabric.Generator;
+import Molecule_Fabric.IAtom;
 
 
 public abstract class MultipleAtomGenerator extends Generator {

@@ -1,6 +1,6 @@
-package Molekühl_Fabric.Generators;
+package Molecule_Fabric.Generators;
 
-import Molekühl_Fabric.Atoms.OzonMolecule;
+import Molecule_Fabric.Atoms.OzonMolecule;
 
 public class OzonGenerator extends MultipleAtomGenerator {
 

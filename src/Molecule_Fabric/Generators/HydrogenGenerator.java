@@ -1,7 +1,7 @@
-package Molekühl_Fabric.Generators;
+package Molecule_Fabric.Generators;
 
-import Molekühl_Fabric.Atoms.HydrogenAtom;
-import Molekühl_Fabric.Generator;
+import Molecule_Fabric.Atoms.HydrogenAtom;
+import Molecule_Fabric.Generator;
 
 public class HydrogenGenerator extends Generator {
 

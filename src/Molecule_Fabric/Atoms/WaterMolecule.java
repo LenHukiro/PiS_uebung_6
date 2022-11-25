@@ -1,7 +1,7 @@
-package Molekühl_Fabric.Atoms;
+package Molecule_Fabric.Atoms;
 
-import Molekühl_Fabric.IAtom;
-import Molekühl_Fabric.Molecule;
+import Molecule_Fabric.IAtom;
+import Molecule_Fabric.Molecule;
 
 public class WaterMolecule extends Molecule {
 
