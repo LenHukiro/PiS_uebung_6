@@ -35,7 +35,7 @@ public class Main extends PApplet {
     public void settings() {
         size(width, height);
     }
-boolean init;
+
     @Override
     public void draw() {
         fill(255);
@@ -61,7 +61,8 @@ boolean init;
             }
             fill(200);
         }
-
+        textSize(12);
+        fill(color(0, 0, 0));
     }
 
 }
